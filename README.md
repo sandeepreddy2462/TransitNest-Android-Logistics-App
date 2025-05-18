@@ -13,16 +13,6 @@
 
 ---
 
-## 🧑‍💼 Project Lead
-
-This project was led and managed by **[Your Name]**, overseeing:
-- Team coordination
-- API development
-- Android-PHP-MySQL integration
-- Testing and deployment
-
----
-
 ## 📱 Features
 
 ### 1. **User Authentication**
@@ -56,5 +46,22 @@ This project was led and managed by **[Your Name]**, overseeing:
 
 ---
 
-## 🗂 Folder Structure
+## 📁 Project Structure
+
+The Android application code is organized as follows:
+
+- **Java Files**: Located in `app/src/main/java/com/example/transitnest/`
+  - Contains all activity classes, helpers, and business logic
+  - Example: `LoginActivity.java`, `SendParcelActivity.java`, etc.
+
+- **XML Layouts**: Located in `app/src/main/res/layout/`
+  - Contains UI layout files for each screen
+  - Example: `activity_login.xml`, `activity_register.xml`, etc.
+
+- **Resources**:
+  - `drawable/`: for images, shapes, icons
+  - `values/`: for app-wide styles, strings, and color definitions
+  - `mipmap/`: for app launcher icons
+
+Each Java activity corresponds to a screen and is linked to its respective layout XML file for UI rendering.
 
