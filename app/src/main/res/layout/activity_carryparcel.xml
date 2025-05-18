@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homepage"
+    android:orientation="vertical"
+    android:background="@drawable/background_gradient"
+    android:padding="16dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/create_trip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Create Trip"
+            android:fontFamily="sans-serif-black"
+            android:textSize="35sp"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/carryparcel_sv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_gradient">
+
+        <LinearLayout
+            android:id="@+id/carryparcel_ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="16dp"
+            android:orientation="vertical" >
+
+            <AutoCompleteTextView
+                android:id="@+id/carryparcel_actv1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/light_gray"
+                android:hint="Travelling From"
+                android:textColor="@color/black"
+                android:textColorHint="@color/dark_gray"
+                android:inputType="text"
+                android:paddingLeft="10dp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/carryparcel_actv2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/light_gray"
+                android:hint="Travelling To"
+                android:textColor="@color/black"
+                android:textColorHint="@color/dark_gray"
+                android:inputType="text"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/carryparcel_et3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/light_gray"
+                android:hint="Date and Time of Departure"
+                android:textColor="@color/black"
+                android:textColorHint="@color/dark_gray"
+                android:focusable="false"
+                android:clickable="true"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/carryparcel_et4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/light_gray"
+                android:hint="Expected Arrival Date and Time"
+                android:textColor="@color/black"
+                android:textColorHint="@color/dark_gray"
+                android:focusable="false"
+                android:clickable="true"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/carryparcel_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Transportation Mode"
+                android:layout_marginBottom="8dp"/>
+
+            <RadioGroup
+                android:id="@+id/carryparcel_rg1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/carryparcel_rb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Train"
+                    android:textSize="16sp"
+                    android:buttonTint="@color/dark_gray"/>
+
+                <RadioButton
+                    android:id="@+id/carryparcel_rb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bus"
+                    android:textSize="16sp"
+                    android:buttonTint="@color/dark_gray"/>
+
+                <RadioButton
+                    android:id="@+id/carryparcel_rb3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Car"
+                    android:textSize="16sp"
+                    android:buttonTint="@color/dark_gray"/>
+
+                <RadioButton
+                    android:id="@+id/carryparcel_rb4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bike"
+                    android:textSize="16sp"
+                    android:buttonTint="@color/dark_gray"/>
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/sendparcel_ll6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/sendparcel_btn2"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/dark_blue"
+                    android:textStyle="bold"
+                    android:layout_marginHorizontal="8dp"/>
+
+                <Button
+                    android:id="@+id/sendparcel_btn3"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/dark_blue"
+                    android:textStyle="bold"
+                    android:layout_marginHorizontal="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

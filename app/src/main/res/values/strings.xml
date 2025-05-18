@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">transitnest</string>
+    <string name="email_or_phone_number">Email or phone number</string>
+    <string name="password">Password</string>
+    <string name="already_have_an_account_log_in">Already have an account? Log In</string>
+    <string name="sign_in">Sign In</string>
+</resources>

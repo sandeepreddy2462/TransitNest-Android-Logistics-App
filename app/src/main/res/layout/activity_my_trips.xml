@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:padding="10dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/trip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="My Trips"
+        android:fontFamily="sans-serif-black"
+        android:textSize="35dp" />
+
+    <!-- Toggle Buttons -->
+    <LinearLayout
+        android:id="@+id/toggle_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@id/trip"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btn_created_trips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Created Trips"
+            android:backgroundTint="@color/blue_button"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btn_connected_trips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connected Trips"
+            android:backgroundTint="@color/light_gray"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="5dp"/>
+    </LinearLayout>
+
+    <!-- Created Trips Section -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_marginBottom="50dp"
+
+        android:layout_below="@id/toggle_buttons">
+    <LinearLayout
+        android:id="@+id/createdTripsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_below="@id/toggle_buttons"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/noCreatedTripsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Created Trips Yet"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="10dp"/>
+
+        <ListView
+            android:id="@+id/createdTripsList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+    </LinearLayout>
+    </ScrollView>
+
+    <!-- Connected Trips Section -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_marginBottom="50dp"
+        android:layout_below="@id/toggle_buttons"
+        android:contentDescription="Connected Trips">
+    <LinearLayout
+        android:id="@+id/connectedTripsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_below="@id/toggle_buttons"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Connected Trips Yet"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="10dp"/>
+
+        <ListView
+            android:id="@+id/connectedTripsList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+    </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/bottom_homepage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/dark_blue">
+
+        <Button
+            android:id="@+id/home_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:background="@android:color/transparent"
+            android:text="Home"
+            app:cornerRadius="5dp"
+            app:icon="@drawable/home_icon"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:layout_margin="5dp" />
+
+        <Button
+            android:id="@+id/trips_button"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginEnd="20dp"
+            android:background="@android:color/transparent"
+            android:text="My Trips"
+            app:cornerRadius="5dp" />
+
+        <Button
+            android:id="@+id/myparcel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:text="My Parcel"
+            app:cornerRadius="5dp" />
+    </LinearLayout>
+
+    <!-- Bottom Navigation Bar -->
+</RelativeLayout>

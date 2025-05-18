@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sendparcel"
+    android:background="@drawable/background_gradient"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/sendparcel_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+
+
+        <TextView
+            android:id="@+id/Send_parcel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Send Parcel"
+            android:fontFamily="sans-serif-black"
+            android:textSize="35sp"
+            android:layout_marginHorizontal="16dp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:id="@+id/sendparcel_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/background_gradient">
+
+            <LinearLayout
+                android:id="@+id/sendparcel_ll2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+
+                <TextView
+                    android:id="@+id/sendparcel_tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Category"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/sendparcel_et1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/light_gray"
+                    android:hint="Content"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dark_gray"
+                    android:inputType="text"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/sendparcel_et2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/light_gray"
+                    android:hint="Item"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dark_gray"
+                    android:inputType="text"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/sendparcel_tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/black"
+                    android:text="Open box policy and packaging." />
+
+                <TextView
+                    android:id="@+id/sendparcel_tv5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="know more"
+                    android:textColor="@color/medium_blue" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/sendparcel_et3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dark_gray"
+                    android:background="@color/light_gray"
+                    android:hint="From"
+                    android:inputType="text"
+                    android:padding="10dp" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/sendparcel_et4"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dark_gray"
+                    android:background="@color/light_gray"
+                    android:hint="To"
+                    android:inputType="text"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/sendparcel_tv6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weight after packing"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/price_of_parcel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="(Charges: 55 ruppees per Kg)"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/sendparcel_ll_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/sendparcel_et5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@color/light_gray"
+                        android:hint="kgs"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/dark_gray"
+                        android:padding="10dp" />
+
+                    <EditText
+                        android:id="@+id/sendparcel_et6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@color/light_gray"
+                        android:hint="gms"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/dark_gray"
+                        android:padding="10dp" />
+
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sendparcel_et7"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dark_gray"
+                    android:background="@color/light_gray"
+                    android:hint="Instructions to Bringers (Optional)"
+                    android:padding="10dp"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/sendparcel_tv7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Receiver Info"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+
+                <EditText
+                    android:id="@+id/sendparcel_et8"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="Enter Mobile Number"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dark_gray"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/sendparcel_et9"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dark_gray"
+                    android:background="@color/white"
+                    android:hint="Mail"
+                    android:padding="10dp"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/sendparcel_et10"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dark_gray"
+                    android:background="@color/white"
+                    android:hint="Receiver Name"
+                    android:padding="10dp"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:id="@+id/sendparcel_ll6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/sendparcel_btn2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Cancel"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/dark_blue"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="5dp"
+                        android:padding="10dp" />
+
+                    <Button
+                        android:id="@+id/sendparcel_btn3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Submit"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/dark_blue"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_marginStart="5dp"
+                        android:padding="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
